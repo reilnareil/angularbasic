@@ -1,0 +1,8 @@
+<h1>Angular Basic</h1>
+<input type="text" [(ngModel)]="name" />
+<button (click)="addName()">ADD</button>
+<button (click)="delete()">DELETE</button>
+<ul *ngFor="let na of listOfNames">
+  <li>{{ na }}</li>
+</ul>
+<p *ngIf="this.listOfNames.length > 10">you have more than 10 names</p>
